@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.datasharewidget.MainActivity$PlaceholderFragment" >
+
+    <com.example.datasharewidget.DataShareView
+        android:id="@+id/dataShareView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <com.example.datasharewidget.DragableView
+            android:id="@+id/dragableView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:tag="10"
+            android:contentDescription="first"/>
+
+        <com.example.datasharewidget.DragableView
+            android:id="@+id/dragableView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:tag="15"
+            android:contentDescription="second"/>
+        
+        <com.example.datasharewidget.DragableView
+            android:id="@+id/dragableView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:tag="20"
+            android:contentDescription="third"/>
+    </LinearLayout>
+</LinearLayout>
